@@ -1,0 +1,13 @@
+@media screen and (max-width:576px) {
+    .fieldblock {
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-nav {
+        margin-bottom: 1em;
+    }
+
+}

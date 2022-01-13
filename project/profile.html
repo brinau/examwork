@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./d-desktop.css">
+    <link rel="stylesheet" href="./d-tablet.css">
+    <link rel="stylesheet" href="./d-mobile.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="sidebar secondary-color" id="navigate">
+            <div class="sidebar-title">
+                <button type="button" class="close-btn" onclick="showNow()"></button>
+                <p>Company</p>
+            </div>
+            <div class="sidebar-nav">
+                <ul>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>Dashboard</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>User Profile</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Maps</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"/></svg>Notifications</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-info">
+                <div class="main-content-title">
+                    <button type="button" id="toggle-menu" onclick="showNow()"></button>
+                    <p>User Profile</p>
+                </div>
+                <div class="content-block profile-container">
+                    <div class="profile-info">
+                        <div class="inside-content secondary-color">
+                            <img src="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg" alt="co-founder photo Jorik" width="100" heiht="100">
+                            <p class="job-position">ceo / co-founder</p>
+                            <p class="name">Alex Alex</p>
+                            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic error provident, ab ducimus porro ut maiores earum iure, tenetur debitis expedita at temporibus illo dicta neque modi pariatur ipsum dignissimos?</p>
+                        </div>
+                    </div>
+                    <div class="profile-feilds">
+                        <div class="inside-content secondary-color">
+                            <div class="profile-content-title burg-bg">
+                                <p class="profile-main-title">
+                                    Edit profile
+                                </p>
+                                <p class="profile-secondary-title">
+                                    Complete your profile
+                                </p>
+                            </div>
+                            <form action="" method="get" class="form-example">
+                                <div class="fieldblock">
+                                    <div class="form-example">
+                                        <label for="company">Company</label>
+                                        <input type="text" name="company" id="company" required>
+                                    </div>
+                                    <div class="form-example">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" id="username" required>
+                                    </div>
+                                    <div class="form-example">
+                                        <label for="email">Email address</label>
+                                        <input type="email" name="email" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="fieldblock">
+                                    <div class="form-example">
+                                        <label for="firstname">First Name</label>
+                                        <input type="text" name="firstname" id="firstname" required>
+                                    </div>
+                                    <div class="form-example">
+                                        <label for="lastname">Last Name</label>
+                                        <input type="text" name="lastname" id="lastname" required>
+                                    </div>
+                                </div>
+                                <div class="fieldblock">
+                                    <div class="form-example">
+                                        <label for="address">Address</label>
+                                        <input type="text" name="address" id="address" required>
+                                    </div>
+                                </div>
+                                <div class="fieldblock">
+                                    <div class="form-example">
+                                        <label for="city">City</label>
+                                        <input type="text" name="city" id="city" required>
+                                    </div>
+                                    <div class="form-example">
+                                        <label for="country">Country</label>
+                                        <input type="text" name="country" id="country" required>
+                                    </div>
+                                    <div class="form-example">
+                                        <label for="postcode">Post Code</label>
+                                        <input type="number" name="postcode" id="postcode" required>
+                                    </div>
+                                </div>
+                                <div class="fieldblock">
+                                    <div class="form-example">
+                                        <label for="aboutme">About me</label>
+                                        <textarea name="aboutme" id="aboutme" rows="5" cols="33"></textarea>
+                                    </div>
+                                </div>
+                                <div class="fieldblock submit-btn">
+                                    <div class="form-example submit-btn">
+                                        <input class="burg-bg" type="submit" value="update profile">
+                                    </div>
+                                </div>
+
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of content-info -->
+            <footer>
+                <div class="footer-content">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">licenses</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                        <p>2022 - made with love</p> 
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+<script>
+    function showNow() {
+        var element=document.getElementById("navigate");
+        element.classList.toggle("show");
+    }
+</script>
+</html>

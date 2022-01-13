@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./d-desktop.css">
+    <link rel="stylesheet" href="./d-tablet.css">
+    <link rel="stylesheet" href="./d-mobile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="sidebar" id="navigate">
+            <div class="sidebar-title">
+                <button type="button" class="close-btn" onclick="showNow()"></button>
+                <p>Company</p>
+            </div>
+            <div class="sidebar-nav">
+                <ul>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>Dashboard</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>User Profile</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Maps</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"/></svg>Notifications</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-info">
+                <div class="main-content-title">
+                    <button type="button" id="toggle-menu" onclick="showNow()"></button>
+                    <p>Dashboard</p>
+                </div>
+                <div class="content-block">
+                    <div class="item-block">
+                        <div class="item-block-content">
+                            <img class="category-image green-bg" src="./images/data_white.svg" alt="data" width="80" height="80">
+                            <p class="category-title">
+                                Used space
+                            </p>
+                            <p class="value">
+                                49/50GB
+                            </p>
+                            <p class="special">
+                                Get more space
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-block">
+                        <div class="item-block-content">
+                            <img class="category-image yellow-bg" src="./images/shop_white.svg" alt="data" width="80" height="80">
+                            <p class="category-title">
+                                Revenue
+                            </p>
+                            <p class="value">
+                                $34.245
+                            </p>
+                            <p class="special">
+                                Last 24 hours
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-block">
+                        <div class="item-block-content">
+                            <img class="category-image blue-bg" src="./images/tag_white.svg" alt="data" width="80" height="80">
+                            <p class="category-title">
+                                Fixed issues
+                            </p>
+                            <p class="value">
+                                75
+                            </p>
+                            <p class="special">
+                                Tracked from GitHub
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-block">
+                        <div class="item-block-content">
+                            <img class="category-image burg-bg" src="./images/paperplane_white.svg" alt="data" width="80" height="80">
+                            <p class="category-title">
+                                Followers
+                            </p>
+                            <p class="value">
+                               +245
+                            </p>
+                            <p class="special img-icon">
+                                Get more space
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="graphic-block">
+                        <div class="grafic-block-content">
+                            <img class="graphic-image green-bg" src="./images/graphics.svg" alt="graphic" width="300" height="200">
+                            <p class="category-title">
+                                Daily Sales
+                            </p>
+                            <p class="value">
+                                55% increase in today sales
+                            </p>
+                            <p class="special">
+                                updated 4 min age
+                            </p>
+                        </div>
+                    </div>
+                    <div class="graphic-block">
+                        <div class="grafic-block-content">
+                            <img class="graphic-image yellow-bg" src="./images/graphics.svg" alt="graphic" width="300" height="200">
+                            <p class="category-title">
+                                Email Subscriptions
+                            </p>
+                            <p class="value">
+                                Last Campaign Perfomance
+                            </p>
+                            <p class="special">
+                                campeign sent 2 days ago
+                            </p>
+                        </div>
+                    </div>
+                    <div class="graphic-block">
+                        <div class="grafic-block-content">
+                            <img class="graphic-image blue-bg" src="./images/graphics.svg" alt="graphic" width="300" height="200">
+                            <p class="category-title">
+                                Completed Tasks
+                            </p>
+                            <p class="value">
+                                Last Campaign Perfomance
+                            </p>
+                            <p class="special">
+                                campeign sent 2 days ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="lists-block">
+                        <div class="lists-block-content">
+                            <div class="tasks-content-title yellow-bg">
+                                <p class="title">Tasks:</p>
+                                <div class="tab active">
+                                    <div class="tab-elements">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"/></svg>
+                                        <p>Bugs</p>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <div class="tab-elements">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="#828282"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+                                        <p>Website</p>
+                                    </div>
+                                </div>
+                                <div class="tab">
+                                    <div class="tab-elements">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+                                        <p>Server</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="task-list">
+                                <div class="task-line">
+                                    <div class="task-line-content">
+                                        <div class="task-line-left">
+                                            <input type="checkbox" id="task-check" name="task-check" checked>
+                                            <p class="task-text">Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                        <div class="btn-part">
+                                            <img src="./images/edit.png" id="edit-btn" alt="edit" width="24" height="24">
+                                            <img src="./images/remove.png" id="remove-btn" alt="remove" width="24" height="24">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-line">
+                                    <div class="task-line-content">
+                                        <div class="task-line-left">
+                                            <input type="checkbox" id="task-check" name="task-check" checked>
+                                            <p class="task-text">Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                        <div class="btn-part">
+                                            <img src="./images/edit.png" id="edit-btn" alt="edit" width="24" height="24">
+                                            <img src="./images/remove.png" id="remove-btn" alt="remove" width="24" height="24">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-line">
+                                    <div class="task-line-content">
+                                        <div class="task-line-left">
+                                            <input type="checkbox" id="task-check" name="task-check" checked>
+                                            <p class="task-text">Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                        <div class="btn-part">
+                                            <img src="./images/edit.png" id="edit-btn" alt="edit" width="24" height="24">
+                                            <img src="./images/remove.png" id="remove-btn" alt="remove" width="24" height="24">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-line">
+                                    <div class="task-line-content">
+                                        <div class="task-line-left">
+                                            <input type="checkbox" id="task-check" name="task-check" checked>
+                                            <p class="task-text">Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                        <div class="btn-part">
+                                            <img src="./images/edit.png" id="edit-btn" alt="edit" width="24" height="24">
+                                            <img src="./images/remove.png" id="remove-btn" alt="remove" width="24" height="24">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lists-block">
+                        <div class="lists-block-content">
+                            <div class="employ-content-title blue-bg">
+                                <p class="employ-main-title ">
+                                    Employees stats
+                                </p>
+                                <p class="employ-secondary-title">
+                                    New employees on 19th September,2022
+                                </p>
+                            </div>
+                            <div class="table-block">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th width="130">Name</th>
+                                            <th width="130">Salary</th>
+                                            <th>Country</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Dakota Rice</td>
+                                            <td>$36. 547</td>
+                                            <td>Zimbabwe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Dakota Rice</td>
+                                            <td>$36. 547</td>
+                                            <td>Zimbabwe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Dakota Rice</td>
+                                            <td>$36. 547</td>
+                                            <td>Zimbabwe</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Dakota Rice</td>
+                                            <td>$36. 547</td>
+                                            <td>Zimbabwe</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of content-info -->
+            <footer>
+                <div class="footer-content">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">licenses</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                        <p>2022 - made with love</p> 
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+<script>
+    function showNow() {
+        var element=document.getElementById("navigate");
+        element.classList.toggle("show");
+    }
+</script>
+</html>
